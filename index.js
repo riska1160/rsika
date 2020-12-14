@@ -13,7 +13,7 @@ const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
 //
 const BotName = 'RISKA'; // jangan di ubah...bila di ubah eror.      BOT BY RISKA 
-const instagramlu = 'https://instagram.com/maslent11'; // jangan di ubah...bila di ubah eror
+const instagramlu = 'Saya menggunakan Instagram sebagai @riska_gaming._. Instal aplikasinya untuk mengikuti foto dan video saya. https://www.instagram.com/invites/contact/?i=1jcx9fyu73wo&utm_content=k2kbo3jlent11'; // jangan di ubah...bila di ubah eror
 const whatsapplu = 'wa.me/+62 895-3555-66000'; // jangan di ubah...bila di ubah eror
 const kapanbotaktif = 'serahku'; // jangan di ubah...bila di ubah eror
 const grupch1 = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // jangan di ubah...bila di ubah eror
@@ -22,7 +22,7 @@ const grupch2 = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // jangan di
 const
 {
    WAConnection,
-   MessageType,
+   MessageType.
    Presence,
    MessageOptions,
    Mimetype,
