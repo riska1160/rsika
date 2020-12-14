@@ -12,9 +12,9 @@ const menu = require("./lib/menu.js");
 const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
 //
-const BotName = 'RISKA'; // jangan di ubah...bila di ubah eror.      BOT BY MASLENT 
+const BotName = 'RISKA'; // jangan di ubah...bila di ubah eror.      BOT BY RISKA 
 const instagramlu = 'https://instagram.com/maslent11'; // jangan di ubah...bila di ubah eror
-const whatsapplu = 'wa/me +628165466368'; // jangan di ubah...bila di ubah eror
+const whatsapplu = 'wa.me/+62 895-3555-66000'; // jangan di ubah...bila di ubah eror
 const kapanbotaktif = 'serahku'; // jangan di ubah...bila di ubah eror
 const grupch1 = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // jangan di ubah...bila di ubah eror
 const grupch2 = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // jangan di ubah...bila di ubah eror
@@ -849,7 +849,7 @@ scdl("https://m.soundcloud.com/abdul-muttaqin-701361735/lucid-dreams-gustixa-ft-
   var teks = text.split("%ttsid ")[1];
   var path = require('path');
   var text1 = teks.slice(6);
-  text1 = suara;
+  text1 = suara; 7
   var suara = text.replace(/%ttsid/g, text1);
   var filepath = 'mp3/bacot.wav';
   
