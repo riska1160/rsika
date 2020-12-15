@@ -13,16 +13,16 @@ const donate = require("./lib/donate.js");
 const info = require("./lib/info.js");
 //
 const BotName = 'RISKA'; // jangan di ubah...bila di ubah eror.      BOT BY RISKA 
-const instagramlu = 'Saya menggunakan Instagram sebagai @riska_gaming._. Instal aplikasinya untuk mengikuti foto dan video saya. https://www.instagram.com/invites/contact/?i=1jcx9fyu73wo&utm_content=k2kbo3jlent11'; // jangan di ubah...bila di ubah eror
+const instagramlu = 'Saya menggunakan Instagram sebagai @riska_gaming._.'; // jangan di ubah...bila di ubah eror
 const whatsapplu = 'wa.me/+62 895-3555-66000'; // jangan di ubah...bila di ubah eror
-const kapanbotaktif = 'serahku'; // jangan di ubah...bila di ubah eror
+const kapanbotaktif = 'mmm sak karep ku; // jangan di ubah...bila di ubah eror
 const grupch1 = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // jangan di ubah...bila di ubah eror
 const grupch2 = 'https://chat.whatsapp.com/E8VriS0ojj53PX5wkhPYaD'; // jangan di ubah...bila di ubah eror
 //
 const
 {
    WAConnection,
-   MessageType.
+   MessageType. oh
    Presence,
    MessageOptions,
    Mimetype,
@@ -66,7 +66,7 @@ fs.existsSync('./session.json') && conn.loadAuthInfo('./session.json')
 //conn.connectOptions.agent = ProxyAgent ('http://1.0.180.120:8080')
 conn.connect();
 
-conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] =>  bot by @maslent`))
+conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:ss")} ] =>  bot by @RISKA`))
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
@@ -126,7 +126,7 @@ if (text.includes('%nulis')){
       imageToBase64(res.data.result)
         .then(
           (ress) => {
-            conn.sendMessage(id, 'Bot lagi nulis📝', MessageType.text)
+            conn.sendMessage(id, 'Bot baru nulis📝', MessageType.text)
             var buf = Buffer.from(ress, 'base64')
             conn.sendMessage(id, buf, MessageType.image)
         })
@@ -148,7 +148,7 @@ if (text.includes('%ytmp3')){
 if (text.includes("%ytmp3")){
 const teks = text.replace(/%ytmp3 /, "")
 axios.get(`https://st4rz.herokuapp.com/api/yta2?url=${teks}`).then((res) => {
-    let hasil = `Audio telah tersedia pada link di bawah, silahkan klik link dan download hasilnya\n👇👇👇👇👇👇👇👇👇\n\nJudul : ${res.data.title}\n\nLink: ${res.data.result}`;
+    let hasil = `Audio telah tersedia padak link di bawah, silahkan klik link dan download hasilnya\n👇👇👇👇👇👇👇👇👇\n\nJudul : ${res.data.title}\n\nLink: ${res.data.result}`;
     conn.sendMessage(id, hasil ,MessageType.text);
 })
 }
@@ -170,7 +170,7 @@ if (text.includes("%sholat")){
 })
 }
 
-if (text == '%menu'){
+if (text == '+menu'){
 var date = new Date();
 var tahun = date.getFullYear();
 var bulan = date.getMonth();
@@ -206,7 +206,7 @@ var tampilTanggal = "TANGGAL: " + hari + ", " + tanggal + " " + bulan + " " + ta
 var tampilWaktu = "JAM: " + jam + ":" + menit + ":" + detik;
 conn.sendMessage(id, menu.menu(id, BotName, tampilTanggal, tampilWaktu, instagramlu, whatsapplu, kapanbotaktif, grupch1, grupch2) ,MessageType.text);
 }
-if (text == '%help'){
+if (text == '+help'){
 var date = new Date();
 var tahun = date.getFullYear();
 var bulan = date.getMonth();
@@ -267,52 +267,52 @@ else if (text == 'P'){
 conn.sendMessage(id, 'utamakan salam, *Assalamualaikum*' ,MessageType.text);
 }
 else if (text == 'halo'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'hai'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'woi'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'woy'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'hi'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'gan'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'sis'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'bro'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == '%intro'){
 conn.sendMessage(id, '📌HALO SAYANG YANG BARU MASUK intro yak kak :Sebutin Nama,umur,asal,jenisKlamin,udahAdaDoiGa.' ,MessageType.text);
 }
 else if (text == 'sayang'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'i love u'){
 conn.sendMessage(id, 'love you too' ,MessageType.text);
 }
 else if (text == 'mas'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'mba'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'bre'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'cuy'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'euy'){
-conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik %help ya say..' ,MessageType.text);
+conn.sendMessage(id, 'Ya?, ada yang bisa saya bantu? kalo bingung ketik +help ya say..' ,MessageType.text);
 }
 else if (text == 'makasi'){
 conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
@@ -329,10 +329,10 @@ conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.tex
 else if (text == 'thank'){
 conn.sendMessage(id, 'Sama sama, semoga harimu menyenangkan :)' ,MessageType.text);
 }
-else if (text == '%check'){
+else if (text == '+check'){
 conn.sendMessage(id, 'Masih Online' ,MessageType.text);
 }
-else if (text == '%ping'){
+else if (text == '+ping'){
 conn.sendMessage(id, 'Speed Bot _23.593 Scound_' ,MessageType.text);
 }
 else if (text == 'thanks'){
