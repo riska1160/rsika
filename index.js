@@ -51,7 +51,7 @@ conn.on('qr', qr =>
    {
       small: true
    });
-   console.log(`[ ${moment().format("HH:mm:ss")} ] Scan cok`);
+   console.log(`[ ${moment().format("HH:mm:ss")} ] nyo  cok`);
 });
 
 conn.on('credentials-updated', () =>
@@ -70,7 +70,7 @@ conn.on('user-presence-update', json => console.log(`[ ${moment().format("HH:mm:
 conn.on('message-status-update', json =>
 {
    const participant = json.participant ? ' (' + json.participant + ')' : '' // participant exists when the message is from a group
-   console.log(`[ ${moment().format("HH:mm:ss")} ] =>  bot by @maslent`)
+   console.log(`[ ${moment().format("HH:mm:ss")} ] =>  bot by @RISKA™`)
 })
 
 conn.on('message-new', async(m) =>
